@@ -19,3 +19,6 @@ class Deck(object):
 
     def __len__(self):
         return len(self._cards)
+
+    def draw_card(self):
+        return self._cards.pop()
