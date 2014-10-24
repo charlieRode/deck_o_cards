@@ -9,3 +9,8 @@ def test_init_card():
 
 def test_init_deck():
     deck = Deck()
+    assert len(deck._cards) == 52
+
+def test_deck_length():
+    deck = Deck()
+    assert len(deck) == 52
