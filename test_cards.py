@@ -3,9 +3,9 @@ import pytest
 from cards import Card, Deck
 
 def test_init_card():
-    card = Card()
-    assert card.suit is None
-    assert card.rank is None
+    card = Card("Ace", "Spades")
+    assert card.rank == "Ace"
+    assert card.suit == "Spades"
 
 def test_init_deck():
     deck = Deck()
